@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="container mt-5">
+    <h1>Seller App</h1>
+
+    <div class="form-group">
+        <label for="priceInput">Selling Price</label>
+        <input type="number" class="form-control" id="priceInput" placeholder="Enter Price" />
+    </div>
+
+    <div class="form-group">
+        <label for="productInput">Product Name</label>
+        <input type="text" class="form-control" placeholder="Enter Product Name" id="productInput" />
+    </div>
+
+    <div class="form-group">
+        <label for="tableSelect">Choose a Category</label>
+        <select class="form-control" id="tableSelect">
+            <option value="Electronic">Electronic</option>
+            <option value="Food">Food</option>
+            <option value="SkinCare">SkinCare</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-primary" onclick="addToBill()">Add to Bill</button>
+    </div>
+
+    <div>
+        <h3>Electronic Items</h3>
+            <ul id="ElectronicId"></ul>
+        <h3>Food Items</h3>
+            <ul id="FoodId"></ul>
+        <h3>SkinCare Items</h3>
+            <ul id="SkinCareId"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
